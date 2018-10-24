@@ -1,0 +1,18 @@
+module fa (
+    input a,
+    input b,
+    input c,
+    output sum,
+    output carryout
+    //input clk,
+    //input rst
+    
+  ) {
+  
+  //dff aToRmb [8](.clk(clk), .rst(rst));
+
+  always {
+    sum = a^b^c;
+    carryout = (a&&b)+(c&&(a^b));
+  }
+}
