@@ -1,9 +1,9 @@
 module boolean 
 (
     input alufn[4],  
-    input a[8],  
-    input b[8],
-    output gate[8]  //8 bit output
+    input a[16],  
+    input b[16],
+    output gate[16]  //8 bit output
   ) 
 
   {
